@@ -28,14 +28,14 @@ class TestCalculator(unittest.TestCase):
     def test_float_multiply(self):
         self.assertEqual(calculator.multiply(4.2, 3.3), 13.86)
 
-    def test_int_divided(self):
-        self.assertEqual(calculator.divided(9, 3), 3)
+    def test_int_divide(self):
+        self.assertEqual(calculator.divide(9, 3), 3)
 
-    def test_int2_divided(self):
-        self.assertEqual(calculator.divided(9, 0), "NaN")
+    def test_int2_divide(self):
+        self.assertEqual(calculator.divide(9, 0), "NaN")
 
-    def test_float_divided(self):
-        self.assertEqual(calculator.divided(5.4, 3), 1.8)
+    def test_float_divide(self):
+        self.assertEqual(calculator.divide(5.4, 3), 1.8)
 
 if __name__ == '__main__':
     unittest.main()
